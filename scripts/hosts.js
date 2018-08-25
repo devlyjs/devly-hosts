@@ -4,14 +4,13 @@ const {
 const {
   store
 } = require('@devly/devly-store');
-const { filePath } = store.getState().hosts;
 const fs = require('fs');
 const winston = require('winston');
 
 winston.cli();
 
 
-function updateHostsFile(hosts) {
+function updateHostsFile(hosts, filePath) {
   let newEntries = '';
   const data = fs.readFileSync(filePath, 'utf8');
 
@@ -48,12 +47,12 @@ function updateHostsFile(hosts) {
 
 module.exports = class Hosts {
   init(appName) { // eslint-disable-line class-methods-use-this
-    const {hosts} = store.getState().hosts;
-    return updateHostsFile(hosts);
+    const {hosts, filePath} = store.getState().hosts;
+    return updateHostsFile(hosts, filePath);
   }
 
   update(appName) { // eslint-disable-line class-methods-use-this
     const {hosts} = store.getState().hosts;
-    return updateHostsFile(hosts);
+    return updateHostsFile(hosts, filePath);
   }
 };
