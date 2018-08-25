@@ -3,7 +3,7 @@
 const ADD_HOSTS_CONFIG = 'ADD_HOSTS_CONFIG';
 const ADD_HOSTS_COMMANDS = 'ADD_HOSTS_COMMANDS';
 
-function addApacheConfig (config) {
+function addHostsConfig (config) {
   //console.log('config action fired: ', config);
   return {
     type: ADD_HOSTS_CONFIG,
@@ -11,7 +11,7 @@ function addApacheConfig (config) {
   }
 }
 
-function addApacheCommands (yargs) {
+function addHostsCommands (yargs) {
   console.log('action fired: ');
   return {
     type: ADD_HOSTS_COMMANDS,
