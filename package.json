@@ -1,6 +1,6 @@
 {
   "name": "@devly/devly-hosts",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Apache plugin for `@devly` cli manager built with redux and yargs.",
   "main": "index.js",
   "scripts": {
