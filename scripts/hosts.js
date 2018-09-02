@@ -52,7 +52,7 @@ module.exports = class Hosts {
   }
 
   update(appName) { // eslint-disable-line class-methods-use-this
-    const {hosts} = store.getState().hosts;
+    const {hosts, filePath} = store.getState().hosts;
     return updateHostsFile(hosts, filePath);
   }
 };

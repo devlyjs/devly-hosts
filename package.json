@@ -1,7 +1,7 @@
 {
   "name": "@devly/devly-hosts",
-  "version": "2.4.0",
-  "description": "Apache plugin for `@devly` cli manager built with redux and yargs.",
+  "version": "2.5.0",
+  "description": "Hosts plugin for `@devly`.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"

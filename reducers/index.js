@@ -1,5 +1,5 @@
 const winston = require('winston');
-const { ADD_HOSTS_CONFIG, ADD_HOSTS_COMMANDS, UPDATE_HTTPD_VHOSTS } = require('../actions');
+const { ADD_HOSTS_CONFIG, ADD_HOSTS_COMMANDS } = require('../actions');
 const yargs = require('@devly/devly-cli');
 const Hosts = require('../scripts/hosts');
 const hosts = new Hosts();

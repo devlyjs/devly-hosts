@@ -1,6 +1,6 @@
 # Introduction
 
-Hosts plugin for `@devly` cli manager built with redux and yargs.  Assumes env uses apache proxy-server.
+Hosts plugin for `@devly` cli manager built on redux and yargs.  Assumes env uses apache proxy-server.
 
 # Installation
 
@@ -83,7 +83,7 @@ Actions and reducers are the same actions and reducers from redux.  For more inf
 
 `cli.js`
 
-```
+```js
 const store = require('../scripts/reapps/store');
 const yargs = require('yargs');
 const {addHostsConfig, addHostsCommands} = require('@devly/devly-hosts/actions');
