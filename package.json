@@ -1,6 +1,6 @@
 {
   "name": "@devly/devly-hosts",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Hosts plugin for `@devly`.",
   "main": "index.js",
   "scripts": {
