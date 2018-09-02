@@ -11,7 +11,7 @@ function addHostsConfig(state, config){
 }
 
 function addHostsCommands(state){
-  yargs.command('hosts init','Init file, app, or machine',
+  yargs.command('hosts init','Add or update new hostnames',
     {
       force: {
         alias: 'f',
@@ -19,7 +19,7 @@ function addHostsCommands(state){
       },
     },
     function handler(argv) {
-      winston.log('info','Initializing Proxy Server!');
+      winston.log('info','Initializing hosts!');
       hosts.init(argv.force);
     }
   );

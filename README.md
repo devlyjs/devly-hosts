@@ -1,6 +1,8 @@
 # Introduction
 
-Hosts plugin for `@devly` cli manager built on redux and yargs.  Assumes env uses apache proxy-server.
+Hosts plugin for `@devly`. Assumes env uses apache proxy-server.  
+
+For more on hosts file see: https://en.wikipedia.org/wiki/Hosts_(file).
 
 # Installation
 
