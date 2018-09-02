@@ -27,12 +27,10 @@ function addHostsCommands(state){
 }
 
 module.exports = function hostsReducer(state = initialState, action){
-  console.log('hostsReducer outside of switch statement : ', action.type);
   switch (action.type) {
     case ADD_HOSTS_CONFIG:
       return addHostsConfig(state, action.config);
     case ADD_HOSTS_COMMANDS:
-      console.log('add command reducer: ');
       return addHostsCommands(state);
     default:
       return state;
